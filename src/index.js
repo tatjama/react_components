@@ -1,7 +1,7 @@
 import React from 'react';
-import ReacrDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 
-const App = () =>{
+const App = ()=> {
     return(<div>React components</div>)
 }
 
