@@ -1,4 +1,4 @@
-import faker from 'faker';
+//import faker from 'faker';
 import React from 'react';
 
 
@@ -6,7 +6,7 @@ const CommentDescription = (props)=>{
     return(
         <div className ="comment">
             <a className=" avatar" href="/">
-                <img alt="avatar" src={faker.image.avatar()}/>
+                <img alt="avatar" src={props.avatar}/>
             </a>
             <div className = "content">
                  <a className = "author" href="/">{props.name}</a>
