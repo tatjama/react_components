@@ -3,8 +3,10 @@ import React from 'react';
 
 const Card = (props)=>{
     return(
-        <div className = "card">    
-        <div className = "comments">
+        <div className = "ui card">    
+        <div className = "content">
+    {/*The place where to put children element.
+     Properties sending with props.children */}
             {props.children}
          </div>   
             <div className = "extra content">
@@ -15,6 +17,8 @@ const Card = (props)=>{
             </div>
         </div>
     );
+    
+
 };
 
 export default Card;

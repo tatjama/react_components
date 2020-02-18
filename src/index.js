@@ -7,21 +7,42 @@ import faker from 'faker';
 
 
 const App = ()=> {
-    return(
-       // <div className = "comments">
+    return(       
     <div className = "ui cards">
+        <Card>
+            <h4>Approval!</h4>
+            Do you want to do this?
+        </Card>
         <Card >
             <CommentDescription name = "Sam" 
+            {/*Avatar is from Faker.js library.
+             We call it with function faker.image.avatar(). Use {} becouse this is JS Function*/}
             avatar = {faker.image.avatar()} 
             date = "Today 06:00h" 
             text = "Nice blog !" />
-         </Card>   
-        <CommentDescription name = "Jane" date = "Today 08:30h" text = "Very useful information!"/>
-        <CommentDescription name = "Jo" date = "Today 10:00h" text ="Have a nice day!"/>
-        <CommentDescription name = "Mary" date = "Today 16:00h" text = "Thank you for your comment!"/>
-                 
-    </div>
-    //</div>
+         </Card> 
+         <Card>  
+            <CommentDescription 
+            name = "Jane" 
+            avatar = {faker.image.avatar()}
+             date = "Today 08:30h" 
+             text = "Very useful information!"/>
+         </Card>
+         <Card>
+            <CommentDescription  
+            name = "Jo"
+            avatar = {faker.image.avatar()}
+             date = "Today 10:00h"
+              text ="Have a nice day!"/>
+         </Card>
+         <Card>
+            <CommentDescription 
+            name = "Mary"
+            avatar = {faker.image.avatar()}
+             date = "Today 16:00h"
+              text = "Thank you for your comment!"/>
+         </Card>        
+    </div>   
     )
     
 }
