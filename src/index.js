@@ -14,9 +14,9 @@ const App = ()=> {
             Do you want to do this?
         </Card>
         <Card >
-            <CommentDescription name = "Sam" 
-            {/*Avatar is from Faker.js library.
+             {/*Avatar is from Faker.js library.
              We call it with function faker.image.avatar(). Use {} becouse this is JS Function*/}
+            <CommentDescription name = "Sam"            
             avatar = {faker.image.avatar()} 
             date = "Today 06:00h" 
             text = "Nice blog !" />
